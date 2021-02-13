@@ -1,0 +1,12 @@
+{
+  "name": "object_oriented",
+  "version": "1.0.0",
+  "description": "This is a simple project to show the basic concepts with JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
