@@ -1,8 +1,8 @@
 export class ContactEntity {
 
-    constructor (id, name) {
-        this._id = id,
-        this._name = name;
+    constructor (contactEntity) {
+        this._id = contactEntity.id,
+        this._name = contactEntity.name;
     }
 
     get id() {

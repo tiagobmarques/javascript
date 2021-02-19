@@ -1,11 +1,11 @@
 import { ContactEntity } from "./ContactEntity.js";
 
 export class ParticipantEntity extends ContactEntity{
-    constructor (id, name, registrationCode, registrationType, registrationNumber) {
-        super(id, name);
-        this._registrationCode = registrationCode;
-        this._registrationType = registrationType;
-        this._registrationNumber = registrationNumber;
+    constructor (participantEntity) {
+        super(participantEntity);
+        this._registrationCode = participantEntity.registrationCode;
+        this._registrationType = participantEntity.registrationType;
+        this._registrationNumber = participantEntity.registrationNumber;
     }
 
     get registrationCode() {

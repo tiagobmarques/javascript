@@ -1,11 +1,11 @@
 export class InvoiceEntity {
 
-    constructor(id, participant, installmentDate, document, value) {
-        this._id = id;
-        this._participant = participant;
-        this._installmentDate = installmentDate;
-        this._document = document;
-        this._value = value;
+    constructor(invoiceEntity) {
+        this._id = invoiceEntity.id;
+        this._participant = invoiceEntity.participant;
+        this._installmentDate = invoiceEntity.installmentDate;
+        this._document = invoiceEntity.document;
+        this._value = invoiceEntity.value;
     }
 
     get id(){

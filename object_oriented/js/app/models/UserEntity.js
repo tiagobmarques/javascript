@@ -1,10 +1,10 @@
 import { ContactEntity } from "./ContactEntity.js";
 
 export class UserEntity extends ContactEntity{
-    constructor (id, name, login, password) {
-        super(id, name);
-        this._login = login;
-        this._password = password;
+    constructor (userEntity) {
+        super(userEntity);
+        this._login = userEntity.login;
+        this._password = userEntity.password;
     }
 
     get login () {

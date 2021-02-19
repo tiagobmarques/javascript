@@ -11,7 +11,7 @@ export class Repository{
     }
 
     findAll() {
-        return [].concat(this._objectList);
+        return [...this._objectList];
     }
 
     findById(id) {
